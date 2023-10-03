@@ -16,8 +16,8 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/project-b34vvmtp/assets/index-853b02a4.js"></script>
-    <link rel="stylesheet" href="/project-b34vvmtp/assets/index-aea8d36d.css">
+    <script type="module" crossorigin src="/project-b34vvmtp/assets/index-88f7bfd6.js"></script>
+    <link rel="stylesheet" href="/project-b34vvmtp/assets/index-e812e760.css">
   </head>
   <body>
     <!-- HEADER -->
@@ -246,7 +246,15 @@
       </p>
     </div>
 
-    <picture class="about-img">
+    <picture>
+      <source
+        media="(min-width: 1440px)"
+        srcset="
+          ../img/about/about-desktop-big.jpg    1x,
+          ../img/about/about-desktop-big@2x.jpg 2x
+        "
+        type="image/jpg"
+      />
       <!-- Desktop screen -->
       <source
         media="(min-width: 1280px)"
@@ -275,6 +283,7 @@
         type="image/jpg"
       />
       <img
+        class="about-img"
         src="../img/about/about-mobile.jpg"
         alt="vyshyvanka"
         loading="lazy"
